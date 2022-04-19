@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        <p>First Name:*</p>
+        <input type="text" name = "first-name">
+    </div>
+    <div>
+        <p>Last Name:*</p>
+        <input type="text" name = "last-name">
+    </div>
+    <div>
+        <p>Email Adress:*</p>
+        <input type="text" name = "email-address">
+    </div>
+    <div>
+        <p>Password:*</p>
+        <input type="password" name ="password">
+    </div>
+    <div>
+        <p>Confirm Password:*</p>
+        <input type="password" name = "confirm-password">
+    </div>
+    <div>
+        <p>Birthday</p>
+        <input type="date" name="birthday" id="bday">
+    </div>
+    <div>
+        <p>Gender Identity:</p>
+        <input type="radio" name="male" value = "male" id="male">
+            <label for="male">Male</label>
+        <input type="radio" name="female" value = "female" id="female">
+            <label for="female">Female</label>
+        <input type="radio" name="other" value = "other" id="other">
+            <label for="other">Prefer not to say</label>
+    </div>
+    <div>
+        <p>A short description of myself</p>
+        <textarea name="description" cols="20" rows = "3">
+        </textarea>
+    </div>
+    <div>
+        <p>Favorite Language</p>
+        <select name="fav-lang" id="fav-lang">
+            <option value="JavaScript">JavaScript</option>
+            <option value="C-sharp">C#</option>
+            <option value="Python">Python</option>
+            <option value="Spanish">Spanish</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" name="email-consent" id="email-consent">
+        <label for="email-consent">Yes, I would like to recieve periodic email updates</label>
+    </div>
+    <button>Create Account</button>
+    <p>*Indicates a required field</p>
+</body>
+</html>
