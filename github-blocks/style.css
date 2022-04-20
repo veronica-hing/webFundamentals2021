@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+body{
+    padding: 15px;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    align-items: center;
+    margin: inherit;
+}
+
+.red{
+    background-color: red;
+    display: flex;   
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.green{
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+
+.blue{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
