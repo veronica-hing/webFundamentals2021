@@ -13,14 +13,17 @@ h3{
     font-size: medium;
 }
 .nav-bar{
-    display: flex;
-    align-items: center;
+    /*display: flex;
+    align-items: center;*/
     background-image: linear-gradient(to bottom right,#2374E1, #178f9690);
     color: white;
+    justify-content: space-between;
 }
 
 .links{
     display: flex;
+    align-items: center;
+    margin-left: 15px;
 }
 
 .links li{
@@ -42,6 +45,7 @@ h3{
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
+    justify-content: space-between;
 }
 
 .row{
@@ -77,20 +81,19 @@ img{
 .info{
     background-color: rgba(0,0,0,0);
     margin-left: 25px; 
-    margin-top: -50px;
+    margin-top: 50px;
 
 }
 .user-img{
     border-radius: 50%;
     position: relative;
-    top: -50px;
+    top: 50px;
     left: 25px;
     border: 3px solid gray;
     box-shadow: 3px 3px 2px gray;
 }
 .blue-bar{
-  background-image: linear-gradient(to bottom right,blanchedalmond, #2374E1);
-    height: 90px;
+    background-image: linear-gradient(to bottom right,blanchedalmond, #2374E1);
 }
 
 .education{
