@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+video{
+    width: 720px;
+    height: 400px;
+}
 body {
     background-color: #f3f3f3;
     font-family: 'Montserrat', sans-serif;
