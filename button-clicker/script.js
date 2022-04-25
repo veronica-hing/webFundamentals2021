@@ -15,4 +15,5 @@ function toggleLogin(elem){
 function addLike(elem){
     elem.value = parseInt(elem.value) + 1;
     elem.innerText = elem.value + " likes";
+    alert("Ninja was liked")
 }
