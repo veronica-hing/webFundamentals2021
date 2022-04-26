@@ -21,16 +21,20 @@ console.log(pizzaOven());//default pizza
 console.log(pizzaOven("thin crust", "marinara", ["mozzarella"], ["pineapple", "chicken", "bacon"]));
 
 function randomPizza(){
+    // used to get random indeces of the arrays
     const seed = Math.random();
     const seed2 = Math.random();
+    //arrays for us to choose our pizza build
     const allToppings = ["chicken", "tomatoes", "artichokes", "anchovies","pineapple", "onions","bell peppers", "ghost peppers", "olives", "shroomies", "bacon", "pepperoni", "sausage", "garlic"];
     const allSauces = ["pesto", "marinara", "alfredo"];
     const allCrusts = ["thin crust", "deep dish", "thick crust", "filled crust"];
     const allCheeses = ["mozzarella", "parmesan", "asiago", "brie"];
+    //using the seed for a random index in the array with all possible pizza build choices
     var myCrust = allCrusts[Math.floor(seed*allCrusts.length)];
     var mySauce = allSauces[Math.floor(seed*allSauces.length)];
     var myCheeses = [allCheeses[Math.floor(seed*allCheeses.length)], allCheeses[Math.floor(seed2*allCheeses.length)]];
     var myToppings = [allToppings[Math.floor(seed*allToppings.length)], allToppings[Math.floor(seed2*allToppings.length)]];
+    //call the pizzaOven function to make the pizza with our random choices
     return pizzaOven(myCrust, mySauce, myCheeses, myToppings);
 }
 
