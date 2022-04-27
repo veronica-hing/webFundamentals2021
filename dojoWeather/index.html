@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class = "d-flex space-between bg-blue padding centered-v"> 
+        <h1 class = "col-1">DojoWeather</h1>
+        <div class = "d-flex space-around col-1">
+            <a href="#" onclick = "loadingInfo()">Burbank</a>
+            <a href="#" onclick = "loadingInfo()">Chicago</a>
+            <a href="#" onclick = "loadingInfo()">Dallas</a>
+        </div>
+    </nav>
+    <!-- Heading with temperature scale picker -->
+    <div class = "header d-flex space-between centered-v margin">
+        <h1>San Jose</h1>
+        <div class = " d-flex temp-picker centered-v">
+            <p>show temperature in</p>
+            <select name="unitPicker" id="unitPicker" onchange = "convertUnit(this)">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+    </div>
+    <!--  Content with forecast for today, tomorrow, friday and saturday -->
+    <div class="content d-flex gap margin space-between">
+        <div class="day bg-grey">
+            <h2>Today</h2>
+            <img src="./assets/some_rain.png" alt="some rain" class = "round">
+            <p>some rain</p>
+            <div class = "d-flex space-between">
+                <p class = "hi-temp temp">24°</p>
+                <p class="low-temp temp">18°</p>
+            </div>
+        </div>
+        <div class="day bg-grey">
+            <h2>Tomorrow</h2>
+            <img src="./assets/some_sun.png" alt="some sun" class = "round">
+            <p>some sun</p>
+            <div class = "d-flex space-between">
+                <p class = "hi-temp temp">27°</p>
+                <p class="low-temp temp">19°</p>
+            </div>
+        </div>
+        <div class="day bg-grey">
+            <h2>Friday</h2>
+            <img src="./assets/some_clouds.png" alt="some clouds" class = "round">
+            <p>some clouds</p>
+            <div class = "d-flex space-between">
+                <p class = "hi-temp temp">21°</p>
+                <p class="low-temp temp">16°</p>
+            </div>
+        </div>
+        <div class="day bg-grey">
+            <h2>Saturday</h2>
+            <img src="./assets/some_sun.png" alt="some sun" class = "round">
+            <p>some sun</p>
+            <div class = "d-flex space-between">
+                <p class = "hi-temp temp">26°</p>
+                <p class= "low-temp temp">21°</p>
+            </div>
+        </div>
+    </div>
+    <!-- cookie -->
+    <div class="cookie d-flex gap centered-v margin">
+        <img src="./assets/cookie.png" alt="bitten cookie">
+        <div class = "col-4">
+            <h2>
+                Stop! Cookie time
+            </h2>
+            <p>
+                We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a>
+            </p>
+        </div>
+        <button class = "bg-blue col-1" onclick = "removeCookie('cookie')">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

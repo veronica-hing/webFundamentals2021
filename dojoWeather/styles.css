@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/*Default styling*/
+.d-flex{
+    display: flex;
+}
+
+.col-1{
+    flex: 1;
+}
+
+.col-4{
+    flex:4;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.centered-v{
+    align-items: center;
+}
+.gap{
+    gap: 1em;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+.bg-blue{
+    background-color: #9FC5F8;
+}
+
+.bg-grey{
+    background-color: #EEEEEE;
+}
+
+.low-temp{
+    color:#2B78E4;
+}
+
+.hi-temp{
+    color: #D1413F;
+}
+
+.padding{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.margin{
+    margin-left: 15%;
+    margin-right:15%;
+}
+
+img, p{
+    padding: 1em;
+}
+
+/*nav specific styling*/
+nav{
+    color: white;
+    padding: 1em;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav h1{
+    font-size: 2.5em;
+}
+
+.header{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid black;
+}
+
+.content{
+    margin-top: 1em;
+}
+/* day specific styling */
+
+.day{
+    text-align: center;
+    padding: 1em;
+}
+
+/*cookie specific styling*/
+.cookie{
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px black;
+    padding: 1em;
+    position: absolute;
+    bottom: 0px;
+}
+
+.cookie button{
+    box-shadow: 2px 2px 1px black;
+    padding: .5em;
+}
