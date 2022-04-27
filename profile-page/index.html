@@ -28,14 +28,14 @@
                     <img src="https://placekeanu.com/100/100/y" alt="" class="user-img">
                 </div>
                 <div class="info">
-                    <h1>Thomas Anderson</h1>
+                    <h1 id = "userName">Thomas Anderson</h1>
                     <div class="row">
                         <img class = "icon" src="map-marker.png" alt="map marker pin">
                         <span>Seattle</span>
                     </div>
                     <p>Developer | Engineer | Problem Solver</p>
                     <p>Master of shadows and the interwebs</p>
-                    <div class="row">
+                    <div class="row" onclick = "changeName('userName')">
                         <img src="gear.png" alt="gear cog editor icon" class="icon">
                         <a href="#">edit</a>
                     </div>
@@ -61,19 +61,19 @@
                     <h2 class = "round numbers">2</h2>
                     <h2>Connection Requests</h2>
                 </div>
-                <div class="row">
+                <div class="row" id = "Neo">
                     <img class = "round person" src="https://placekeanu.com/420/420/y" alt="">
                     <span>Neo Alias</span>
                     <div class="col-1"></div>
-                    <img class = "round" src="accept-circle.png" alt="check-mark">
-                    <img src="close-circle.png" alt="cancel-mark">
+                    <img class = "round" src="accept-circle.png" alt="check-mark" onclick = "addPerson('Neo')">
+                    <img src="close-circle.png" alt="cancel-mark" onclick = "removePerson('Neo')">
                 </div>
-                <div class="row">
+                <div class="row" id = "John">
                     <img class = "round person" src="https://placekeanu.com/150/`50/y" alt="">
                     <span>John Wick</span>
                     <div class="col-1"></div>
-                    <img src="accept-circle.png" alt="check-mark">
-                    <img src="close-circle.png" alt="cancel-mark">
+                    <img src="accept-circle.png" alt="check-mark" onclick = "addPerson('John')">
+                    <img src="close-circle.png" alt="cancel-mark" onclick = "removePerson('John')">
                 </div>
             </div>
             <div class="your-connections card">
@@ -107,5 +107,6 @@
             </div>
         </div>
     </div>
+    <script src = "script.js"></script>
 </body>
 </html>
