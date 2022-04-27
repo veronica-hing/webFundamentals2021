@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Balsamiq Sans', cursive, Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+nav{
+    padding: 1em;
+    background-color: black;
+    color: white;
+}
+
+body > h1{
+    text-align: center;
+    margin: .5em;
+}
+
+.main{
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.col-1{
+    flex: 1;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.col-1 > a{
+    display: block;
+    padding: 1em;
+}
+.col-2{
+    flex: 2;
+}
+
+.user{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.user-card{
+    padding: 1em;
+    border: 1px solid black;
+}
+.friend{
+    border: 1px solid black;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.deets{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.likes{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.likes > p{
+    padding-right: 1em;
+}
+
+button{
+    padding: .5em;
+    background-color: #FCD966;
+    box-shadow: 2px 2px 1px black;
+    width: 100%;
+}
+
+.quote{
+    margin-top: 1em;
+}

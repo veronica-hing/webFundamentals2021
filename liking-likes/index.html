@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav bar that is basic -->
+    <nav><h1>Network</h1></nav>
+    <!-- no class on the your feed since it's just centered -->
+    <h1>Your Feed</h1>
+    <!-- contains the two flex columns, col-1 is for user deets, col-2 is for their friends -->
+    <div class="main">
+        <div class="col-1 user-card">
+            <img src="https://placekeanu.com/100/100/y" alt="young keanu" class="user">
+            <a href="#" class="change-avatar">change avatar</a>
+            <h1>James Doe</h1>
+        </div>
+        <div class="col-2">
+            <div class="friend">
+                <div class="deets">
+                    <h2 class = "col-2">Niel M</h2>
+                    <div class="col-1 likes" id = "niel">
+                        <p>9 like(s)</p>
+                        <button class="col-1" onclick = "addOne('niel')">Like</button>
+                    </div>
+                </div>
+                <div class="quote">
+                    <p>I just set up this new discord bot, let me know what you think!</p>
+                </div>                
+            </div>
+            <div class="friend">
+                <div class="deets">
+                    <h2 class = "col-2" >Nichole K</h2>
+                    <div class="likes col-1" id = "nichole">
+                        <p>12 like(s)</p>
+                        <button class="col-1" onclick = "addOne('nichole')">Like</button>
+                    </div>
+                </div>
+                <div class="quote">
+                    <p>Just finished my next <a href="#">comic</a>, check it out.</p>
+                </div>                
+            </div>
+            <div class="friend">
+                <div class="deets">
+                    <h2 class = "col-2">Jim R</h2>
+                    <div class="likes col-1" id = "jim">
+                        <p>9 like(s)</p>
+                        <button class="col-1" onclick = "addOne('jim')">Like</button>
+                    </div>
+                </div>
+                <div class="quote">
+                    <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </div>                
+            </div>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
