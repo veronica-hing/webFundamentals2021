@@ -100,7 +100,7 @@ nav h1{
     border: 2px solid black;
     box-shadow: 1px 1px 1px black;
     padding: 1em;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
 }
 
