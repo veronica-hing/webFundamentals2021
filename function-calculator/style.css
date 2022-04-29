@@ -1,0 +1,13 @@
+#calculator{
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: .5em;
+    width: 110px;
+}
+
+#display{
+    background-color: honeydew;
+    margin-bottom: .5em;
+    padding: .25em;
+    border: 1px solid black;
+}
